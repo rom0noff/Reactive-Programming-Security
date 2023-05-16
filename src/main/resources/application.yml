@@ -1,0 +1,12 @@
+server:
+  port: 8082
+
+spring:
+  r2dbc:
+    username: postgres
+    password: 1234
+    url: r2dbc:postgresql://localhost:5432/db?useUnicode=true&characterEncoding=UTF-8&useSSL=false&useLocalSessionState=true
+  data:
+    r2dbc:
+      repositories:
+        enabled: true
